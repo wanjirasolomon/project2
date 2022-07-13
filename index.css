@@ -1,0 +1,760 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+.navbar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    background: #000;
+}
+.logo {
+    display: flex;
+    flex: 2;
+    color: black;
+    font-family: oleo script;
+}
+.logo h1 {
+    color: #fff;
+    font-weight: 600;
+    font-size: 48px;
+    margin-left: 4rem;
+}
+.navs {
+    flex: 4;
+    display: flex;
+    flex-direction: row;
+    padding-left: 5rem;
+}
+.navs ul {
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+}
+.navs ul li {
+    list-style: none;
+    font-size: 24px;
+    font-weight: 300;
+    color: #fff;
+    margin-left: 2rem;
+    transition: 0.5s ease;
+}
+
+.navs ul li a {
+    text-decoration: none;
+    color: #fff;
+
+}
+.navs ul li a:hover{
+    cursor: pointer;
+    border-bottom: 3px solid #ED661F;
+    color: #ED661F;
+}
+.navs ul li a.active {
+    border-bottom: 3px solid #ED661F;
+}
+.login {
+    /*flex:1; */
+    margin-right: 5rem;
+}
+.login a {
+    font-size: 24px;
+    font-weight: 300;
+    color: #fff;
+    margin-right: 4rem;
+    transition: 0.5s ease;
+    border-bottom: none;
+    text-decoration: none;
+}
+
+.login a:hover {
+    color: #ED661F;
+}
+
+.login button {
+    padding: 1rem;
+    background-color: #ED661F;
+    color: #fff;
+    font-size: 24px;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+.login button a:hover {
+    color: #ED661F;
+}
+.login button:hover {
+    background-color: #fff;
+    color: #ED661F;
+}
+/* .header {
+    background-image: url("../../image1.png");
+    height:100vh;
+    background-position:center;
+    width:100%;
+    object-fit:cover;
+    background-size:cover;
+    background-repeat:no repeat;
+} */
+/* header section styling */
+.header {
+    display: flex;
+    flex-direction: row;
+    background-image: url('./image1.png');
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    background-repeat: no-repeat;
+
+}
+
+.header .content {
+    display: flex;
+    flex-direction: row;
+    margin-top: 6rem;
+}
+
+.content .text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 4rem;
+    margin-top: 3rem;
+    flex: 1;
+}
+
+.text h1 {
+    color: #000;
+    font-size: 4rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-bottom: 0;
+}
+
+.text p {
+    font-size: 2rem;
+    font-weight: normal;
+}
+.text button {
+    padding: 1rem;
+    background-color: #ED661F;
+    color: #fff;
+    font-size: 24px;
+    width: 13rem;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.text button:hover {
+    background: transparent;
+    border: 2px solid #ED661F;
+    color: #ED661F;
+}
+
+.content .image {
+    flex: 1.5;
+    display: flex;
+}
+
+.content .image img {
+    width: 800px;
+    height: 400PX;
+    display: flex;
+    margin-top: 8rem;
+    margin-left: 4rem;
+}
+
+
+.box {
+    width: 55%;
+    margin: auto;
+    background: #fff;
+    border-bottom: 1px solid gray;
+    display: flex;
+    flex-direction: row;
+    margin-top: -2rem;
+    border-radius: 6px;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+
+
+.first {
+    margin-left: 2rem;
+}
+.first p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.second p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.third {
+    margin-right: 2rem;
+}
+.third p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.reasons {
+    display: flex;
+    flex-direction: row;
+    padding-top: 4rem;
+}
+
+.left {
+    flex: 1;
+    margin-left: 4rem;
+}
+
+.left h2 {
+    font-size: 4rem;
+}
+
+.left p {
+    font-size: 1.8rem;
+    font-weight: lighter;
+}
+
+.right {
+    flex: 1;
+    margin-right: 4rem;
+}
+
+.right img {
+    width: 100%;
+    height: 100%;
+}
+
+.categories {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center;
+    justify-content: center;
+    text-align: center; */
+}
+
+.content-c {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.content-c h1 {
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+.content-c p {
+    font-size: 1.8rem;
+    font-weight: normal;
+}
+
+.popular {
+    display: flex;
+    flex-direction: column;
+}
+
+.popular .text_p {
+    margin-left: 6rem;
+}
+
+.popular-1 {
+    display: flex;
+    flex-direction: row;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.popular-1 .carrots img {
+    width: 300px;
+    height: 300px;
+}
+
+.popular-1 .cereals img {
+    width: 300px;
+    height: 300px;
+}
+
+.popular-1 .fish img {
+    width: 300px;
+    height: 300px;
+}
+
+.popular-1 .kales img {
+    width: 300px;
+    height: 300px;
+}
+
+
+.newest {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.newest-1 {
+    display: flex;
+    flex-direction: row;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.newest .chicken img {
+    width: 300px;
+    height: 300px;
+}
+
+.newest .rice img {
+    width: 300px;
+    height: 300px;
+}
+
+.newest .milk img {
+    width: 300px;
+    height: 300px;
+}
+
+.newest .tomato img {
+    width: 300px;
+    height: 300px;
+}
+
+.comments {
+    display: flex;
+    flex-direction: column;
+}
+
+.comments .text {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.comments .text h1 {
+    font-size: 3rem;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    padding-top: 2rem;
+    gap: 6rem;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.cards .card1 {
+    background: whitesmoke;
+    border: 1px solid gray;
+    border-top: 1px solid white;
+    /* width: 300px; */
+    height: auto;
+    border-radius: 6px;
+}
+
+.card1 .stars {
+    justify-content: space-between;
+    flex-direction: row;
+    margin-top: 2rem;
+    gap: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    align-items: center;
+    text-align: center;
+}
+
+.card1 p {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-left: 1rem;
+}
+
+.person {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 1rem;
+}
+
+.person p {
+    font-size: 1rem;
+    margin-left: 0.5rem;
+}
+
+
+.cards .card2 {
+    background: whitesmoke;
+    border: 1px solid gray;
+    border-top: 1px solid white;
+    /* width: 300px; */
+    height: auto;
+    border-radius: 6px;
+}
+
+.card2 .stars {
+    justify-content: space-between;
+    flex-direction: row;
+    margin-top: 2rem;
+    gap: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    align-items: center;
+    text-align: center;
+}
+
+.card2 p {
+    font-size: 3.5rem;
+    margin-left: 1rem;
+    font-weight: bold;
+}
+
+.person {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 1rem;
+}
+
+.person p {
+    font-size: 1rem;
+    margin-left: 0.5rem;
+}
+
+
+
+.cards .card3 {
+    background: whitesmoke;
+    border: 1px solid gray;
+    border-top: 1px solid white;
+    /* width: 300px; */
+    height: auto;
+    border-radius: 6px;
+}
+
+.card3 .stars {
+    justify-content: space-between;
+    flex-direction: row;
+    margin-top: 2rem;
+    gap: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    align-items: center;
+    text-align: center;
+}
+
+.card1 .stars svg {
+    margin-left: 1rem;
+}
+
+.card2 .stars svg {
+    margin-left: 1rem;
+}
+
+.card3 .stars svg {
+    margin-left: 1rem;
+}
+
+.card3 p {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-left: 1rem;
+}
+
+.person {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 1rem;
+}
+
+.person p {
+    font-size: 1rem;
+    margin-left: 0.5rem;
+}
+
+.contact {
+    width: 90%;
+    margin-top: 3rem;
+    background: #000;
+    margin: auto;
+    height: 400px;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 5rem;
+}
+
+.contact h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.contact p {
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+
+form {
+    display: flex;
+    margin: auto;
+    width: fit-content;
+}
+
+form input {
+    border: 0;
+    outline: none;
+    color: #fff;
+    padding-left: 20px;
+    height: 50px;
+    width: 400px;
+    font-size: 16px;
+}
+
+form button {
+    background: #ED661F;
+    border: none;
+    outline: none;
+    width: 150px;
+    height: 53.5px;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 20px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+    background: #000;
+    height: 500px;
+    margin-top: 2rem;
+    color: #fff;
+}
+
+.contents {
+    display: flex;
+    flex-direction: row;
+    margin-left: 4rem;
+}
+
+.agriplus h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.agriplus p{
+    font-size: 1rem;
+    font-weight: lighter;
+}
+
+.agriplus .icons {
+    margin-left: 0rem;
+    gap: 1rem;
+}
+
+.agriplus .icons svg {
+    padding: 2rem 1rem;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.agriplus .icons svg:hover {
+    color: #ED661F;
+}
+
+.apps {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+}
+
+.apps .apple {
+    background: #fff;
+    width: 170px;
+    height: 70px;
+    border-radius: 6px;
+    color: #000;
+    cursor: pointer;
+    transition: 0.s ease;
+}
+
+.apps .apple:hover {
+    background: #ED661F;
+}
+.apple svg {
+    align-items: center;
+    margin-top: 1.5rem;
+}
+.apple h6 {
+    margin-top: -2rem;
+    margin-left: 1.5rem;
+}
+
+.apple h4 {
+    margin-top: 0rem;
+    margin-left: 1.5rem;
+}
+
+.apps .playstore {
+    background: #fff;
+    width: 170px;
+    height: 70px;
+    border-radius: 6px;
+    color: #000;
+    cursor: pointer;
+    transition: 0.s eas
+}
+.apps .playstore:hover {
+    background: #ED661F;
+}
+
+.playstore svg {
+    align-items: center;
+    margin-top: 1.5rem;
+}
+.playstore h6 {
+    margin-top: -2rem;
+    margin-left: 1.5rem;
+}
+
+.playstore h4 {
+    margin-top: 0rem;
+    margin-left: 1.5rem;
+}
+
+.links1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-left: 7rem;
+    gap: 6rem;
+    /* align-items: center; */
+}
+
+.company {
+    text-align: left;
+    justify-content: flex-start;
+}
+
+.company h2 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.company ul {
+    margin-left: -1.6rem;
+}
+
+.company ul li {
+    list-style: none;
+    font-size: 1rem;
+    font-weight: lighter;
+    padding: 1rem 0;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.company ul li:hover {
+    color: #ED661F;
+}
+
+
+.products {
+    text-align: left;
+    justify-content: flex-start;
+}
+
+.products h2 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.products ul {
+    margin-left: -1.6rem;
+}
+
+.products ul li {
+    list-style: none;
+    font-size: 1rem;
+    font-weight: lighter;
+    padding: 1rem 0;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.products ul li:hover {
+    color: #ED661F;
+}
+
+
+
+.others {
+    text-align: left;
+    justify-content: flex-start;
+}
+
+.others h2 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.others ul {
+    margin-left: -1.6rem;
+}
+
+.others ul li {
+    list-style: none;
+    font-size: 1rem;
+    font-weight: lighter;
+    padding: 1rem 0;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.others ul li:hover {
+    color: #ED661F;
+}
+
+.rights {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.rights p {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
